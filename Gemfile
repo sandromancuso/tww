@@ -28,10 +28,11 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :development, :test do
+  gem "database_cleaner", "0.6.7"
   gem "rspec-rails", ">= 2.0.0"
   gem "cucumber-rails", ">= 0.3.2"
   gem "webrat", ">= 0.7.2"
   # Pretty printed test output
-  gem 'turn', :require => false
+  gem 'turn', '< 0.8.3'  #:require => false
 end
 
